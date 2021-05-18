@@ -1,0 +1,8 @@
+.trees {
+    display: flex;
+}
+
+.trees-buttons {
+    display: flex;
+    flex-direction: column;
+}

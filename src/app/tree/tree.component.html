@@ -1,0 +1,18 @@
+<div class="trees">
+    <ejs-treegrid #tree [dataSource]='catalogosA' [treeColumnIndex]='1' autoCheckHierarchy='true' childMapping='childrens'>
+        <e-columns>
+            <e-column field='codigo' headerText='Código' textAlign='Center' width=50></e-column>
+            <e-column field='descripcion' headerText='Nombre' textAlign='Left' width=200 [showCheckbox]='true'></e-column>
+        </e-columns>
+    </ejs-treegrid>
+    <div class="trees-buttons">
+        <button ejs-button (click)="onBtnDerechaClick()">derecha</button>
+        <button ejs-button (click)="onBtnIzquierdaClick()">izquierda</button>
+    </div>
+    <ejs-treegrid #tree2 [dataSource]='catalogosB' [treeColumnIndex]='1' autoCheckHierarchy='true' childMapping='childrens'>
+        <e-columns>
+            <e-column field='codigo' headerText='Código' textAlign='Center' width=50></e-column>
+            <e-column field='descripcion' headerText='Nombre' textAlign='Left' width=200 [showCheckbox]='true'></e-column>
+        </e-columns>
+    </ejs-treegrid>
+</div>
